@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import './main.css';
 
 
 class App extends Component {
@@ -17,8 +18,9 @@ class App extends Component {
                     >
                         chek
                     </a>
-                    <form action="">
+                    <form className="App-form" action="">
                         <input type="text"/>
+                        <input type="submit" value="Send"/>
                     </form>
                 </header>
                 <div className="App-block">

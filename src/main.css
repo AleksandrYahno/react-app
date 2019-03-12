@@ -1,0 +1,33 @@
+.App {
+  border: 1px dotted gray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: lightgray; }
+
+.App-header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #282c34; }
+.App-header .App-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .App-header .App-form input {
+    margin: 10px;
+    border: 1px solid gray; }
+
+.App-block {
+  border: 1px dotted gray;
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */
