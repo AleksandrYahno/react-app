@@ -23,6 +23,7 @@ class App extends Component {
                         <input type="submit" value="Send"/>
                     </form>
                 </header>
+                <div id="resApp"></div>
                 <div className="App-block">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iusto.
                 </div>
