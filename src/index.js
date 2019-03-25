@@ -1,44 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-//
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: http://bit.ly/CRA-PWA
-// serviceWorker.unregister();
+import App from './App'
+import './main.css'
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
 
 
-
-var requestURL = 'https://api.themoviedb.org/3/discover/movie?api_key=5874acfd11651a28c55771624f7021f4&language=en-US&primary_release_date.gte=2014-09-15&primary_release_date.lte=2017-10-22';
-var request = new XMLHttpRequest();
-
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function () {
-    var obj = request.response;
-    console.log(obj.results);
-
-    for (var i = 0; i < obj.results.length; i++) {
-
-        console.log(obj.results[i].id);
-        var res = document.getElementById("resApp");
-        console.log(res);
-        res.innerHTML = obj.results[i].overview;
-
-    }
-
-};
-
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App/>, document.getElementById("root"))
